@@ -1,0 +1,76 @@
+Metadata-Version: 1.1
+Name: anybox.recipe.sysdeps
+Version: 0.4
+Summary: A buildout recipe to check system dependencies
+Home-page: https://bitbucket.org/anybox/anybox.recipe.sysdeps/overview
+Author: Christophe Combelles
+Author-email: ccomb@anybox.fr
+License: ZPL
+Description: anybox.recipe.sysdeps
+        =====================
+        
+        .. contents::
+        
+        This is a simple and stupid buildout recipe to check system requirements.
+        It is primarily intended to check dependencies on Linux and MacOsX but any help to make
+        it work on Windows will be integrated.
+        
+        Recipe options:
+        ~~~~~~~~~~~~~~~
+        
+        **deps**: list all the required system package names and the corresponding command
+        line to check the requirement.
+        
+        Example buildout:
+        ~~~~~~~~~~~~~~~~~
+        ::
+        
+            [buildout]
+            parts = sysdeps
+        
+            [sysdeps]
+            recipe = anybox.recipe.sysdeps
+            deps = PostgreSQL: which pg_dump
+                   Redis:      which redis-server
+                   php5-mysql: dpkg -l php5-mysql
+        
+        
+        If redis-server is not available, you will get an error while running the
+        buildout, telling you to install Redis.
+        You can use any command line to check whether the package is installed or not.
+        
+        Contribute
+        ~~~~~~~~~~
+        The primary branch is here:
+        
+        - Code repository: https://bitbucket.org/anybox/anybox.recipe.sysdeps/
+        
+        Changes
+        ~~~~~~~
+        
+        0.4 (01-07-2012)
+        ----------------
+        
+        - Dependency checking is now just a command line to run
+        
+        0.3 (19-12-2011)
+        ----------------
+        
+         - Moved to mercurial
+         - (bug) return an iterable instead of None
+        
+        0.2 (15-10-2011)
+        ----------------
+        
+         - Fixed install recipe and forgotten file
+        
+        0.1 (06-08-2011)
+        ----------------
+        
+         - Initial naive implementation using 'which'
+        
+Platform: UNKNOWN
+Classifier: Framework :: Buildout
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

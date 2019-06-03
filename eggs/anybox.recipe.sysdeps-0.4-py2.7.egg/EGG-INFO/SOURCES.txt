@@ -1,0 +1,17 @@
+CHANGES.txt
+MANIFEST.in
+README.txt
+setup.cfg
+setup.py
+anybox/__init__.py
+anybox.recipe.sysdeps.egg-info/PKG-INFO
+anybox.recipe.sysdeps.egg-info/SOURCES.txt
+anybox.recipe.sysdeps.egg-info/dependency_links.txt
+anybox.recipe.sysdeps.egg-info/entry_points.txt
+anybox.recipe.sysdeps.egg-info/namespace_packages.txt
+anybox.recipe.sysdeps.egg-info/not-zip-safe
+anybox.recipe.sysdeps.egg-info/requires.txt
+anybox.recipe.sysdeps.egg-info/top_level.txt
+anybox/recipe/__init__.py
+anybox/recipe/sysdeps/__init__.py
+anybox/recipe/sysdeps/dependencies.py

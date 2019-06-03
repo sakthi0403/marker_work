@@ -1,0 +1,3 @@
+[zc.buildout]
+default = anybox.recipe.sysdeps:Dependencies
+

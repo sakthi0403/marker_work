@@ -1,0 +1,29 @@
+#!${buildout:directory}/bin/paster exe
+# Author: Sakthi Krish
+# Version: 1.0 
+#
+# Configuration for use with paster/WSGI
+#
+
+[exe]
+command = serve
+daemon = true
+user = ${server:user}
+group = ${server:group}
+pid-file = ${server:rundir}/paster.pid
+
+[filter:translogger]
+use = egg:Paste#translogger
+setup_console_handler = False
+logger_name = wsgi
+
+[app:main]
+use = egg:${websvc-app:egg_name}${server:flags}
+filter-with = translogger
+
+[server:main]
+use = egg:gunicorn#main
+host = ${server:host}
+port = ${server:port}
+workers = ${:workers}
+worker-class = ${:worker-class}

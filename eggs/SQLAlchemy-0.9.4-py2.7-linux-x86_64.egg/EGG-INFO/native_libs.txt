@@ -1,0 +1,3 @@
+sqlalchemy/cresultproxy.so
+sqlalchemy/cutils.so
+sqlalchemy/cprocessors.so

@@ -1,0 +1,4 @@
+version: 1
+TEMPL_DIR: ${buildout:directory}/share
+type: [movie, episode, sports]
+destination: /tmp/

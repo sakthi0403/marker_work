@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="text-vertical-center" style="text-align: center">
+  <h1>Markers</h1>
+   <form action= '/getfile' method='post' enctype=multipart/form-data>
+       <h3>Upload new File</h3>
+       <input type=file name=myfile>   <input type=submit value=Upload>
+    </form>
+    {% if success %}
+    <p class=success><strong></strong> {{ success }}
+    {% endif %}
+    {% if error %}
+    <p style="color:red;" class=error><strong>Error:</strong> {{ error }}
+    {% endif %}
+</div>
+{% endblock %}

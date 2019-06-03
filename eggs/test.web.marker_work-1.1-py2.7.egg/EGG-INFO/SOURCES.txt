@@ -1,0 +1,13 @@
+setup.cfg
+setup.py
+test/__init__.py
+test.web.marker_work.egg-info/PKG-INFO
+test.web.marker_work.egg-info/SOURCES.txt
+test.web.marker_work.egg-info/dependency_links.txt
+test.web.marker_work.egg-info/entry_points.txt
+test.web.marker_work.egg-info/not-zip-safe
+test.web.marker_work.egg-info/requires.txt
+test.web.marker_work.egg-info/top_level.txt
+test/web/__init__.py
+test/web/marker_work/__init__.py
+test/web/marker_work/main.py

@@ -1,0 +1,4 @@
+setuptools
+test.lib.support_utils >= 2.1
+web.py >= 0.37, < 0.38
+flask >= 0.10.1

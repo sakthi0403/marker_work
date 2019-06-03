@@ -1,0 +1,7 @@
+
+        # -*- Entry points: -*-
+        [zc.buildout]
+        default = evg.recipe.activate:Recipe
+        [zc.buildout.uninstall]
+        default = evg.recipe.activate:uninstall
+      

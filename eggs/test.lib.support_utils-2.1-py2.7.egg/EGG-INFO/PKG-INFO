@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: test.lib.support-utils
+Version: 2.1
+Summary: Basic supporting utils like configs and logs
+Home-page: http://www.nbcuni.com
+Author: Sakthi Krish
+Author-email: kiarash.bodouhi@nbcuni.com
+License: test
+Description: Basic supporting utils like configs and logsPlace for basic supporting libraries to control logs and configs and ....
+Keywords: library log config
+Platform: UNKNOWN

@@ -1,0 +1,5 @@
+
+    [paste.app_factory]
+    main = test.web.marker_work.main:make_app
+    debug = test.web.marker_work.main:make_debug
+    

@@ -1,0 +1,5 @@
+setuptools
+zc.buildout >= 1.5
+
+[test]
+zope.testing

@@ -1,0 +1,34 @@
+#!/usr/bin/python2.7
+
+import sys
+sys.path[0:0] = [
+  '/Users/a501961079/Sakthi/marker_work/eggs/test.web.marker_work-1.1-py2.7.egg',
+  '/Users/a501961079/Sakthi/marker_work/eggs/Flask-0.10.1-py2.7.egg',
+  '/Users/a501961079/Sakthi/marker_work/eggs/gunicorn-0.17.2-py2.7.egg',
+  '/Users/a501961079/Sakthi/marker_work/eggs/PasteScript-1.7.5-py2.7.egg',
+  '/usr/local/lib/python2.7/site-packages',
+  '/Users/a501961079/Sakthi/marker_work/eggs/PasteDeploy-1.5.0-py2.7.egg',
+  '/Users/a501961079/Sakthi/marker_work/eggs/test.lib.mam-2.3.1-py2.7.egg',
+  '/Users/a501961079/Sakthi/marker_work/eggs/lxml-3.2.4-py2.7-linux-x86_64.egg',
+  '/Users/a501961079/Sakthi/marker_work/eggs/SQLAlchemy-0.9.4-py2.7-linux-x86_64.egg',
+  '/Users/a501961079/Sakthi/marker_work/eggs/pymssql-2.1.0-py2.7-linux-x86_64.egg',
+  '/Users/a501961079/Sakthi/marker_work/eggs/pycassa-1.11.0-py2.7.egg',
+  '/Users/a501961079/Sakthi/marker_work/eggs/eventlet-0.14.0-py2.7.egg',
+  '/Users/a501961079/Sakthi/marker_work/eggs/greenlet-0.4.2-py2.7-linux-x86_64.egg',
+  '/Users/a501961079/Sakthi/marker_work/eggs/thrift-0.9.1-py2.7-linux-x86_64.egg',
+  '/Users/a501961079/Sakthi/marker_work/eggs/suds-0.4-py2.7.egg',
+  '/Users/a501961079/Sakthi/marker_work/eggs/test.lib.soap-0.7-py2.7.egg',
+  '/Users/a501961079/Sakthi/marker_work/eggs/test.lib.support_utils-2.1-py2.7.egg',
+  '/Users/a501961079/Sakthi/marker_work/eggs/Paste-1.7.5.1-py2.7.egg',
+  '/Users/a501961079/Sakthi/marker_work/eggs/itsdangerous-0.24-py2.7.egg',
+  '/Users/a501961079/Sakthi/marker_work/eggs/Jinja2-2.7.3-py2.7.egg',
+  '/Users/a501961079/Sakthi/marker_work/eggs/Werkzeug-0.9.6-py2.7.egg',
+  '/Users/a501961079/Sakthi/marker_work/eggs/web.py-0.37-py2.7.egg',
+  '/Users/a501961079/Sakthi/marker_work/eggs/PyYAML-3.10-py2.7-linux-x86_64.egg',
+  '/Users/a501961079/Sakthi/marker_work/eggs/MarkupSafe-0.18-py2.7-linux-x86_64.egg',
+  ]
+
+import gunicorn.app.wsgiapp
+
+if __name__ == '__main__':
+    sys.exit(gunicorn.app.wsgiapp.run())

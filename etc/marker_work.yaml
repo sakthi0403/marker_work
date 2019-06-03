@@ -1,0 +1,4 @@
+version: 1
+TEMPL_DIR: //Users/a501961079/Sakthi/marker_work/share
+type: [movie, episode, sports]
+destination: /tmp/

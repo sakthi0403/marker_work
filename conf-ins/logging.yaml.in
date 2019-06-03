@@ -1,0 +1,37 @@
+version: 1
+formatters:
+  generic:
+    format: '%(asctime)s %(levelname)-5.5s [%(name)s][%(threadName)s][PID:%(process)d] %(message)s'
+  accesslog:
+    format: '%(message)s'
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: NOTSET
+    formatter: generic
+    stream: ext://sys.stderr
+  accesslog:
+    class: logging.FileHandler
+    level: NOTSET
+    formatter: accesslog
+    filename: ${server:logfiles}/access.log
+    mode: a
+  pasterlog:
+    class: logging.FileHandler
+    level: NOTSET
+    formatter: generic
+    filename: ${server:logfiles}/paster.log
+    mode: a
+loggers:
+  test:
+    level: ${server:log_level}
+    handlers: [console, pasterlog]
+    # Don't go to root level
+    propagate: no
+  wsgi:
+    level: ${server:log_level}
+    handlers: [accesslog]
+    propagate: no
+root:
+  level: ${server:log_level}
+  handlers: [console, pasterlog]
